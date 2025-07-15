@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3erProyeto_Jerd22</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+  <body>
+    <form>
+      <div class="container-fluid">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="shadow-sm p-3 mb-5 bg-body-tertiary rounded"><b>Payment form example</b>
+              </div>
+            </div>
+          <!--aqui iria la barra informativa donde automaticamente dira si hay algun formulario por rellenar-->
+          <br>
+          
+              <div class="row">
+                <div class="col-6 need-validation" novalidate>
+                  <div class="form-group">
+                    <label for="txt_card" class="form-label"><b>Card #</b></label>
+                    <input type="text" class="form-control" name="txt_card" placeholder="XXXXXXXXXXXXXXX">
+                  </div>  
+                </div>
+                <div class="col-3">
+                  <label for="txt_cvc" class="form-label"><b>CVC #</b></label>
+                  <input type="text" class="form-control" name="txt_cvc" placeholder="00000">
+                </div>
+                <div class="col-3">
+                  <label for="txt_amount" class="form-label"><b>Amount</b></label>
+                  <input type="number" class="form-control" name="txt_amount" placeholder="Amount">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label for="txt_firstname" class="form-label"><b>First Name</b></label>
+                  <input type="text" class="form-control" name="txt_firstname">
+                </div>
+                <div class="col-6">
+                  <label for="txt_lastname" class="form-label"><b>Last Name</b></label>
+                  <input type="text" class="form-control" name="txt_lastname">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <label for="txt_city" class="form-label"><b>City</b></label>
+                  <input type="text" class="form-control" name="txt_city">
+                </div>
+                <div class="col-3">
+                  <label for="inputState" class="form-label"><b>State</b></label>
+                  <select id="inputState" class="form-select">
+                    <option selected>pick a state</option>
+                    <option>madrid</option>
+                    <option>Barcelona</option>
+                    <option>Valencia</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <label for="txt_postalcode" class="form-label"><b>Postal Code</b></label>
+                  <input type="text" class="form-control" name="txt_postalcode">
+                </div>
+              </div>
+              <div class="row">
+                <label for="txt_we"><b>We accept:</b></label>
+                <div class="col-2 bg-body-secondary pay d-flex justify-content-between">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><i class="bi bi-credit-card"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><i class="bi bi-cash-coin"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label" for="inlineRadio3"><i class="bi bi-paypal"></i></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label" for="inlineRadio4"><i class="bi bi-stripe"></i></label>
+                  </div>
+                </div>
+                <div class="col-4">
+
+                </div>
+                <div class="col-6">
+                  <label for="exampleFormControlTextarea1" class="form-label"><b>Message</b></label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <p>Add any notes here.</p>
+                </div>
+              </div>
+
+            <br><br><br>
+            <div class="buttons shadow-sm p-3 mb-5 bg-body-tertiary rounded d-flex justify-content-end">
+              <button type="button " onclick="" class="btn btn-outline-secondary p-2"><i class="fa fa-check-circle"></i>Cancel</button>
+              <button class="btn btn-primary p-2" type="submit" onclick="enviar()"></i>Send</button>  
+            </div>
+
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
